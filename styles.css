@@ -1,0 +1,40 @@
+.bigbox {
+    width: 800px;
+    height: 800px;
+    background-color: aquamarine;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    transform: translate(0);
+    animation-name: move-box;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move-box {
+    0% {
+        background-color: red;
+        transform: translate(0);
+    }
+    25% {
+        background-color: blue;
+        transform: translate(0, 650px);
+    }
+    50% {
+        background-color: green;
+        transform: translate(650px, 650px);
+    }
+    75% {
+        background-color: yellow;
+        transform: translate(650px, 0px);
+    }
+    100% {
+        background-color: red;
+        transform: translate(0);
+    }
+}
